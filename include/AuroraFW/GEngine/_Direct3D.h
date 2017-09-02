@@ -1,6 +1,3 @@
-# module-gengine-direct3d
-
-```cpp
 /****************************************************************************
 ** ┌─┐┬ ┬┬─┐┌─┐┬─┐┌─┐  ┌─┐┬─┐┌─┐┌┬┐┌─┐┬ ┬┌─┐┬─┐┬┌─
 ** ├─┤│ │├┬┘│ │├┬┘├─┤  ├┤ ├┬┘├─┤│││├┤ ││││ │├┬┘├┴┐
@@ -18,4 +15,15 @@
 ** ensure the GNU Lesser General Public License version 3 requirements
 ** will be met: https://www.gnu.org/licenses/lgpl-3.0.html.
 ****************************************************************************/
-```
+
+#ifndef AURORAFW_GENGINE__DIRECT3D_H
+#define AURORAFW_GENGINE__DIRECT3D_H
+
+#include <AuroraFW/TLib/Target/Platform.h>
+
+#ifdef AFW_TARGET_PLATFORM_WINDOWS
+	#include <d3d11.h>
+	#include <d3dcompiler.h>
+#endif
+
+#endif // AURORAFW_GENGINE__DIRECT3D_H
