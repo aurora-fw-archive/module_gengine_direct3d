@@ -19,7 +19,7 @@
 #ifndef AURORAFW_GENGINE__DIRECT3D_H
 #define AURORAFW_GENGINE__DIRECT3D_H
 
-#include <AuroraFW/STDL/Target/Platform.h>
+#include <AuroraFW/CoreLib/Target/System.h>
 
 #ifdef AFW_TARGET_PLATFORM_WINDOWS
 	#include <d3d11.h>
